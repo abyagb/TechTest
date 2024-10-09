@@ -8,6 +8,6 @@ namespace ClearBank.Application.PaymentValidators
     {
         AllowedPaymentSchemes AllowedPaymentSchemes { get; }
         PaymentScheme PaymentScheme { get; }
-        bool ValidatePayment(Account? account, MakePaymentRequest makePaymentRequest = null);
+        bool ValidatePayment(Account account, MakePaymentRequest makePaymentRequest = null);
     }
 }
