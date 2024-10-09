@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="8.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="10.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClearBank.Common\ClearBank.Common.csproj" />
+    <ProjectReference Include="..\ClearBank.DeveloperTest\ClearBank.Application.csproj" />
+    <ProjectReference Include="..\ClearBank.Domain\ClearBank.Domain.csproj" />
+    <ProjectReference Include="..\ClearBank.Infrastructure\ClearBank.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
